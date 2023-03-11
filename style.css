@@ -57,4 +57,79 @@ body {
     max-height: 250px;
   }
   
+  .accordion-item__input:checked ~ .accordion-item__check {
+    background-color: #db9927;
+  }
+  
+  .accordion-item__input:checked ~ .accordion-item__content {
+    padding-top: 10px;
+    z-index: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .accordion-item__check:hover ~ .accordion-item__content {
+    padding-top: 15px;
+    z-index: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .accordion-item__content:hover {
+    padding-top: 15px;
+    z-index: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .accordion-item__check:hover {
+    cursor: pointer;
+    background-color: #db9927;
+  }
+  
+  .accordion-item__content {
+    cursor: pointer;
+  }
+  
+  .accordion-item__check:after,
+  .accordion-item__check:before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 3px;
+    top: 50%;
+    right: 20px;
+    background: #0a7339;
+    transition: all 0.3s;
+  }
+  
+  .accordion-item__input:checked ~ .accordion-item__check:before {
+    transform: rotate(90deg);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  
+  .accordion-item__check:after {
+    transform: rotate(90deg);
+    transition: all 0.3s;
+  }
+  
+  .accordion-item__input:checked ~ .accordion-item__check::after {
+    transform: rotate(180deg);
+  }
+  /*  */
+  
+  .accordion-item__input:hover ~ .accordion-item__check:before {
+    transform: rotate(90deg);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  
+  .accordion-item__input:hover ~ .accordion-item__check::after {
+    transform: rotate(180deg);
+  }
+  
  
