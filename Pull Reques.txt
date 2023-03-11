@@ -1,6 +1,6 @@
 1. https://github.com/DrDiman/CSS-Bayan-task
 2. /img/screen.png
-3. 
+3. https://github.com/hdjdwo/cssBayan
 4. Done 12.03.2023 / deadline 13.03.2023
 5.
 [+] Все делается из Repository requirements and how to submit taskраздела 
